@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{setspace}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black
+}
+
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=2pt,parsep=0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{0.5em}{}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+
+{\huge \textbf{M Shafri Syamsuddin}}\\[2pt]
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+Semarang, Indonesia 50273 & \href{mailto:shafrisyamsuddin@gmail.com}{shafrisyamsuddin@gmail.com}\\
+\href{tel:+6283137190178}{+62 831 3719 0178} & \href{https://www.linkedin.com/in/shafrisyamsuddin/}{linkedin.com/in/shafrisyamsuddin} \\
+\href{https://github.com/Shafriii}{github.com/Shafriii} &
+\end{tabularx}
+
+\section*{Summary}
+Computer vision and NLP engineer translating research-grade models into deployable products. Experience building YOLO-based malaria diagnostics, zero-shot sentiment analytics, and Docker-first inference services. Comfortable driving projects end-to-end: data strategy, modelling, MLOps, and stakeholder alignment.
+
+\section*{Experience}
+\textbf{CEO \& Product Lead} \hfill Jun 2022 -- Dec 2023\\
+JIWANA (Startup at UBIC Incubation), Yogyakarta, ID
+\begin{itemize}
+  \item Represented the mental-health chatbot startup across incubation events, forging partnerships and securing mentorship support.
+  \item Directed product roadmap and team coordination, translating user research into actionable requirements.
+  \item Co-designed conversational flows and spearheaded prototype experimentation to validate technical feasibility.
+\end{itemize}
+
+\textbf{Data Scientist Trainee} \hfill Oct 2024 -- Mar 2025\\
+Rakamin Academy, Remote
+\begin{itemize}
+  \item Completed intensive programme covering DBMS, SQL, Python (NumPy, pandas), statistics, scikit-learn, classical ML, ensemble methods, and deep learning.
+  \item Delivered an automated CV summarisation pipeline using NLP techniques to evaluate applicants on academic, social, and professional criteria.
+  \item Practised end-to-end MLOps fundamentals: experiment tracking, evaluation, and deployment-readiness documentation.
+\end{itemize}
+
+\textbf{Human Resource Development Staff} \hfill Sep 2020 -- Jun 2022\\
+Ikatan Mahasiswa Indonesia Xiaozhuang (IMIX), Yogyakarta, ID
+\begin{itemize}
+  \item Designed and delivered capability-building programmes covering technical and soft skills for student members.
+  \item Managed performance assessments, feedback loops, and events to sustain an inclusive, high-performing community.
+\end{itemize}
+
+\section*{Selected Projects}
+\textbf{Malaria Parasite Stage Detection} \hfill 2024 -- Present
+\begin{itemize}
+  \item Master thesis project creating assistive lab tooling with YOLOv8 \& Faster R-CNN ensembles enhanced by LAB colour-space feature insertion.
+  \item Improved mAP\textsubscript{50} from 0.61 (RGB baseline) to 0.69, supporting species \& life-stage detection for Plasmodium falciparum, vivax, malariae, and ovale.
+  \item Exported models to ONNX and wrapped inference in a lightweight executable for deployment in clinics without Python stacks.
+\end{itemize}
+
+\textbf{VisionServe: CIFAR-10 Inference API} \hfill 2025
+\begin{itemize}
+  \item Dockerised FastAPI microservice serving CNN predictions with reproducible training pipelines and artifact versioning.
+  \item Implemented single-command automation for preprocessing, training, metrics export, and QA artefacts (confusion matrix, history).
+  \item Calibrated predictions with probability distributions and mounted model artefacts at runtime for lean deployment.
+\end{itemize}
+
+\textbf{Zero-shot Sentiment Intelligence Pipeline} \hfill 2025
+\begin{itemize}
+  \item Config-driven orchestration using \texttt{facebook/bart-large-mnli} to score public comments without domain-specific fine-tuning.
+  \item Generated dashboards-ready outputs: sentiment trendlines, label share analyses, and confidence diagnostics.
+  \item Structured pipeline for rapid migration into APIs or scheduled batch processing with minimal refactoring.
+\end{itemize}
+
+\section*{Education}
+\textbf{Universitas Gadjah Mada} \hfill Aug 2023 -- Jul 2025\\
+Master of Computer Science (GPA 3.73/4.00) \\
+Thesis: Feature Insertion and Colour Space Transformation for Malaria Parasite Detection in Thin Blood Smear Images using YOLO \& Faster R-CNN.\\
+\begin{itemize}
+  \item Built research publication trend warehouse from Springer metadata to surface emerging topics with advanced visual analytics.
+  \item Led hotel price trend mining across Booking.com, Traveloka, and Tiket.com via Octoparse; analysed pricing vs. city-centre proximity.
+\end{itemize}
+
+\textbf{Nanjing Xiaozhuang University (NXU)} \hfill 2020 -- 2021\\
+Double Degree Programme, Information Engineering\\
+Completed cross-cultural coursework in systems engineering, algorithms, and applied research collaboration.
+
+\textbf{Universitas Islam Indonesia} \hfill Sep 2018 -- Jun 2022\\
+Bachelor of Computer Science (GPA 3.68/4.00)\\
+Undergraduate thesis: Developed a serious game that teaches algorithmic thinking for secondary education.
+
+\section*{Publications}
+Syamsuddin, M. S., et al. \textit{Exploring the Impact of Colour Space in Malaria Parasite Detection using Deep Learning}. AMLDS 2025, Tokyo, Japan. Published by IEEE Xplore. \href{https://ieeexplore.ieee.org/document/11159455}{https://ieeexplore.ieee.org/document/11159455}
+
+\section*{Certifications \& Scores}
+\begin{itemize}
+  \item TOEFL ITP -- Score: 637 (ITC, Mar 2025)
+  \item TPA Online -- Score: 591 (Pusat Layanan Tes Indonesia, Jun 2025)
+  \item Data Scientist Programme, Rakamin Academy -- Completed Oct 2024 to Mar 2025
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Programming \& ML:} Python, PyTorch, TensorFlow, Keras, scikit-learn, YOLOv8, OpenCV, ONNX\\
+\textbf{NLP \& Analytics:} Hugging Face Transformers, Zero-shot Learning, SQL, PostgreSQL, Power BI, Tableau, Plotly, Streamlit\\
+\textbf{MLOps \& Deployment:} FastAPI, Flask, Docker, MLflow, GitHub Actions, Apache Airflow\\
+\textbf{Tools:} Unity, Figma, Git
+
+\end{document}
